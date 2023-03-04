@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script src="JavaScriptFiles/eligiblity.js"></script>
+    
+    <title>Check Eligiblity</title>
+    <link rel="icon" type="image/x-icon" href="static_files/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-dark navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex">
+            <img
+              src="static_files/favicon.png"
+              alt="Logo"
+              width="35"
+              height="35"
+              class="d-inline-block align-text-top"
+            />
+            <h3 class="text-white">
+              &nbsp;&nbsp;Automobile Loans - Check Eligiblity
+            </h3>
+          </a>
+          <div class="justify-content-end">
+            <a class="btn btn-warning" href="user.html">Dashboard</a>&nbsp;
+            <a class="btn btn-warning" href="#">Apply Loan</a>&nbsp;
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <center>
+      <div class="container-fluid p-5">
+        <div  style="width: 35rem">
+          <h3 class="card-tittle bg-dark text-center text-white">
+            Vehicle details
+          </h3>
+          <form action="checkEligiblity_PersonalInfo.html"  class="form-control">
+            <div class="input-group mb-3">
+              <span class="input-group-text">Car Maker</span>
+              <input type="Text" id="carMaker"class="form-control" placeholder="Brand..." required />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Car Model</span>
+              <input type="text"id="carModel"class="form-control"placeholder="model number" required />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Ex-Showroom Price </span>
+              <input type="number" id="showRoomPrice" class="form-control" required />
+              <span class="input-group-text">Rs</span>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">On Road Price </span>
+              <input type="number" id="roadPrice" class="form-control" required/>
+              <span class="input-group-text">Rs</span>
+            </div>
+            <button
+              type="submit"
+              onclick="getInfo();"
+              class="btn btn-warning btn-lg btn-block"
+            >
+              Submit
+            </button>
+
+            <br /><br />
+        </form>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
