@@ -22,9 +22,9 @@ function displayresults(){
     const x = Math.pow(1 + R, n);
     const monthly = (P * x * R) / (x - 1);
     let c=(n*monthly)-P;
-    totalAmount.value = n*monthly;
-    interestAmount.value = c;
-    EMI.value=monthly;
+    totalAmount.value = (n*monthly).toFixed(4);
+    interestAmount.value = c.toFixed(4);
+    EMI.value=monthly.toFixed(4);
     document.getElementById("loading").style.display = 'none';
     document.getElementById("results").style.display='block';
 }
