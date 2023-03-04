@@ -11,32 +11,39 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script
-      type="text/javascript"
-      language="javascript"
-      src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"
-    ></script>
 
-    <script>
-        function calculateEMI(){
-            let principalAmount=document.getElementById("principalAmount").value;
-            let rateOfInterest=document.getElementById("rateOfInterest").value;
-            let timePeriod = document.getElementById("timePeriod").value;
-           // let n = timePeriod*12;
-           // let EMI =  principalAmount*rateOfInterest[((1+rateOfInterest)^n)/(((1+rateOfInterest)^n)-1)]
-            //alert("the emi to be paid is "+EMI);
-        }
-    </script>
+    <link rel="stylesheet" href="StyleSheets/calculator.css">
+
+
+    <script src="JavaScriptFiles/calculator.js"></script>
 
 
     <link rel="icon" type="image/x-icon" href="static_files/favicon.png" />
   </head>
 </head>
 <body>
-   
-    <div class="container">
-    <div class="card" style="width: 30rem;" >
-        <h3 class="card-tittle text-center">Loan Calculator</h3>
+  <header>
+    <nav class=" bg-dark navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex">
+          <img src="static_files/favicon.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top"/>
+          <h3 class="text-white">&nbsp;&nbsp;Automobile Loans -EMI Calculator </h3>
+        </a>
+        <div class=" justify-content-end">
+          <a class="btn btn-warning" href="home.html">Home</a>&nbsp;
+          <a class="btn btn-warning" href="#">Apply Loan</a>&nbsp;
+          <a class="btn btn-warning" href="home.html#about_us">About Us</a>&nbsp;
+        </div>
+      </div>
+    </nav>
+</header>
+
+
+
+   <center>
+    <div class="container-fluid p-5">
+    <div class="card" style="width: 35rem;" >
+        <h3 class="card-tittle bg-dark text-center text-white">Loan Calculator</h3>
     <div class="form-control">
         <div class="input-group mb-3">
             <span class="input-group-text" >Principal Amount</span>
@@ -53,10 +60,50 @@
             <input type="number" id="timePeriod" class="form-control" placeholder="Time to repay in years" >
             <span class="input-group-text">years</span>
           </div>
-          <input type="submit" onclick="calculateEMI();" value="Calculate"class="btn btn-dark btn-block"/>
+          <button type="submit" onclick="showResults();" class="btn btn-warning btn-lg btn-block">Calculate</button>
+
+          <br><br>
         </div>
+<!-- loading animation -->
+    <div id="loading">
+      <img src="static_files/loading-cat.gif" height="250"  alt="loading"/>
+      <!-- <img src="static_files/loading-splash.gif" height="250"  alt="loading"/> -->
+    </div>
+<!-- loading animation -->
+
+
+<!-- results -->
+    <div id="results" >
+      <h3 class="bg-dark text-success">Results</h3>
+      <div  style="width: 33rem;">
+    <div class="input-group mb-3">
+     
+            <span class="input-group-text" >EMI</span>
+            <input type="number" id="emi" class="form-control" disabled >
+            <span class="input-group-text">Rs</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" >Total Amount</span>
+            <input type="number" id="totalAmount" class="form-control" disabled>
+            <span class="input-group-text">Rs</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" >Interest Amount</span>
+            <input type="number" id="interestAmount" class="form-control" disabled >
+            <span class="input-group-text">Rs</span>
+          </div>
+
+        </div>
+
+<!-- results -->
+
+
     </div>
 </div>
-    
+</center>
+
+
+
+
 </body>
 </html>
