@@ -121,8 +121,6 @@
   transform: rotateY(180deg);
 }
 .belowHeader{
-
-    background-color: #F2AA4CFF;
     height: 100%;
 
 }
@@ -150,34 +148,39 @@
     rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous"/>
+    <link rel="icon" type="image/x-icon" href="static_files/favicon.png" />
+
 </head>
 <body >
-    <nav class=" bg-dark navbar bg-body-tertiary">
+  <header>
+    <nav class=" bg-dark fixed-top navbar bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand d-flex">
                 <img src="../static_files/favicon.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top"/>
                 
-                <h3 class="text-white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;User Dashboard</h3>
+                <h3 class="text-white">&nbsp;User Dashboard</h3>
                 
             </a>
-            
-            <div class="btn-group">
-                <a href="../home.html" class="btn btn-warning active" aria-current="page">Home</a>
-                <a href="../emi_calculator.html" class="btn btn-warning">Emi Calculator</a>
-                <div class="btn-group">
-                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Admin
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">My Profile</a></li>
-                      <li><a class="dropdown-item" href="#">Settings</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Log out</a></li>
-                    </ul>
-                </div>
-            </div>
+
+            <div class="justify-content-end">
+              <a href="home.html" class="btn btn-warning " aria-current="page">Home</a>
+              <a href="emi_calculator.html" class="btn btn-warning">EMI Calculator</a>
+              <div class="btn-group">
+                  <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    User
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                  </ul>
+              </div>
+          </div> 
         </div>
     </nav>
+  </header>
+  <div class="pt-5">
     <div class="belowHeader">
         <br><br>
         <div class="Column">
@@ -278,12 +281,10 @@
         </div>
        
     </div>
+  </div>
    
     <footer class="bg-dark text-center text-white" id="about_us">
         <div class="container p-4" > 
-           
-    
-    
         <section class="mb-4">
             <h4>Contributers Github</h4>
             <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Morgan2526" role="button">Prem Gumathanavar</i></a>
@@ -299,12 +300,6 @@
           <a class="text-white" href="https://www.3ds.com/">3ds.com</a>
         </div>
       </footer>
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     

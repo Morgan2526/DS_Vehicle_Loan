@@ -23,7 +23,7 @@
 </head>
 <body>
   <header>
-    <nav class=" bg-dark navbar bg-body-tertiary">
+    <nav class=" bg-dark fixed-top navbar bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand d-flex">
           <img src="static_files/favicon.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top"/>
@@ -39,25 +39,26 @@
 </header>
 
 
-
+<div class="pt-5"></div>
    <center>
+    
     <div class="container-fluid p-5">
     <div class="card" style="width: 35rem;" >
         <h3 class="card-tittle bg-dark text-center text-white">Loan Calculator</h3>
     <div class="form-control">
         <div class="input-group mb-3">
             <span class="input-group-text" >Principal Amount</span>
-            <input type="number" id="principalAmount" class="form-control" placeholder="Principal Amount"  >
+            <input type="number" id="principalAmount" class="form-control" placeholder="Principal Amount" required  >
             <span class="input-group-text">Rs</span>
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text" >Rate of Interest</span>
-            <input type="number" id="rateOfInterest" class="form-control" placeholder="Rate of Interest" >
+            <input type="number" id="rateOfInterest" class="form-control" placeholder="Rate of Interest" required>
             <span class="input-group-text">%</span>
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text" >Time to repay </span>
-            <input type="number" id="timePeriod" class="form-control" placeholder="Time to repay in years" >
+            <input type="number" id="timePeriod" class="form-control" placeholder="Time to repay in years"required >
             <span class="input-group-text">years</span>
           </div>
           <button type="submit" onclick="showResults();" class="btn btn-warning btn-lg btn-block">Calculate</button>
@@ -66,8 +67,8 @@
         </div>
 <!-- loading animation -->
     <div id="loading">
-      <!-- <img src="static_files/loading-cat.gif" height="250"  alt="loading"/> -->
-      <img src="static_files/loading-splash.gif" height="250"  alt="loading"/>
+      <img src="static_files/loading-cat.gif" height="250"  alt="loading"/>
+      <!-- <img src="static_files/loading-splash.gif" height="250"  alt="loading"/> -->
     </div>
 <!-- loading animation -->
 
@@ -101,9 +102,30 @@
     </div>
 </div>
 </center>
+</div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
+<footer class="bg-dark text-center text-white" id="about_us">
+  <div class="container p-4" > 
+  <section class="mb-4">
+      <h4>Contributers Github</h4>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Morgan2526" role="button">Prem Gumathanavar</i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/allauddin111" role="button">Allauddin Jamkhanewale</a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/moonlight-blue" role="button">Param Jangle</i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/yash252525" role="button">Yash Zore</a>
 
+    </section>
+  </div>
 
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Employees @
+    <a class="text-white" href="https://www.3ds.com/">3ds.com</a>
+  </div>
+</footer>
 </body>
 </html>

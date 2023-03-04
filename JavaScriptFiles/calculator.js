@@ -7,7 +7,7 @@ async function showResults(){
     document.getElementById("results").style.display='none';
     document.getElementById("loading").style.display = 'block';
 
-    await sleep(1000);
+    await sleep(1500);
     displayresults();
     
 }
