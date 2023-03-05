@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mt-5">
+        <div class="card">
+          <div class="card-header">
+            <h4>Login</h4>
+          </div>
+          <div class="card-body">
+            <div id="loginForm" >
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+              </div>
+              <div class="form-group">
+                <button type="submit" onclick="validateLoginForm();" class="btn btn-primary btn-block">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+    function validateLoginForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      console.log(username,password);
+      if (username == "admin") {
+        if(password=="admin"){
+          window.location.href='admin_dashboard.html';
+        return true;
+        }
+        
+      }
+      else if (username == "user1") {
+        if(password=="user1"){
+          window.location.href = "index.html";
+        return true;
+        }
+        
+      }
+      else {
+        alert("Please enter your password");
+        return false;
+      }
+
+      // Additional validation logic can be added here
+
+      return true;
+    }
+  </script>
+
+</body>
+</html>

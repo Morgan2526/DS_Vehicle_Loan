@@ -11,13 +11,76 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .pic-ctn {
+        width: 100vw;
+        height: 200px;
+      }
+      
+      @keyframes display {
+        0% {
+          transform: translateX(200px);
+          opacity: 0;
+        }
+        10% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        20% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        30% {
+          transform: translateX(-200px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(-200px);
+          opacity: 0;
+        }
+      }
+      
+      .pic-ctn {
+        position: relative;
+        width: 100vw;
+        height: 300px;
+        margin-top: 15vh;
+      }
+      
+      .pic-ctn > img {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        opacity: 0;
+        animation: display 10s infinite;
+      }
+      
+      img:nth-child(2) {
+        animation-delay: 2s;
+      }
+      img:nth-child(3) {
+        animation-delay: 4s;
+      }
+      img:nth-child(4) {
+        animation-delay: 6s;
+      }
+      img:nth-child(5) {
+        animation-delay: 8s;
+      }
 
+    </style>
 
     <script
       type="text/javascript"
       language="javascript"
       src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"
     ></script>
+
     <link rel="icon" type="image/x-icon" href="static_files/favicon.png" />
   </head>
   <body>
@@ -29,7 +92,7 @@
           <h3 class="text-white">&nbsp;&nbsp;Automobile Loans</h3>
         </a>
         <div class=" justify-content-end">
-          <a class="btn btn-warning" href="#">Login</a>&nbsp;
+          <a class="btn btn-warning" href="login.html   ">Login</a>&nbsp;
           <a class="btn btn-warning" href="emi_calculator.html">EMI Calculator</a>&nbsp;
           <a class="btn btn-warning" href="#">Apply Loan</a>&nbsp;
           <a class="btn btn-warning" href="#about_us">About Us</a>&nbsp;
@@ -37,12 +100,15 @@
       </div>
     </nav>
 </header>
-    
-    
-
-
-<a href="UserDashboard/index.html">Click here to enter as user</a>
-<!-- carousel bootstrap -->
+<center>
+  <div class="card">
+<div class="pic-ctn">
+  <img src="https://poonawallafincorp.com/pfca/assets/blog_banner/1647625292.jpeg" height="490px"  width="1470px" alt="" class="pic">
+  <img src="https://www.mahindrafinance.com/media/392445/utility-banner-desktop.jpg?quality=80&format=webp" height="490px" width="1470" alt="" class="pic">
+  <img src="https://nithyashreecoop.com/images/services/vehicle_loan.jpg" height="490px" width="1470px" alt="" class="pic">
+  <img src="https://www.autovista.in/assets/img/blog/topup.jpg"  height="490px"alt="" width="1470px" class="pic">
+</div></div>
+</center><!-- carousel bootstrap -->
 <br>
 <br>
 <br>
@@ -52,28 +118,6 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<!-- carousel bootstrap -->
 <footer class="bg-dark text-center text-white" id="about_us">
     <div class="container p-4" > 
        
