@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    
+    <title>My Loans</title>
+    <link rel='stylesheet' type='text/css' href=''>
+    <script>
+
+
+    </script>
+    <style>
+
+
+
+
+
+
+.belowHeader{
+    margin-top:20px ;
+    background-color: white;
+    height: 100%;
+
+}
+.loan{
+    margin-top: 5px;
+    border-radius: 20px;
+    height: 200px;
+    margin-bottom: 5px;
+
+}
+.details{
+    height: max-content;
+    width: 60px;
+}
+    </style>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"/>
+</head>
+<body >
+    <nav class=" bg-dark navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex">
+                <img src="../static_files/favicon.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top"/>
+                
+                <h3 class="text-white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;My Loans</h3>
+                
+            </a>
+            
+            <div class="btn-group">
+                <a href="../home.html" class="btn btn-warning active" aria-current="page">Home</a>
+                <a href="../emi_calculator.html" class="btn btn-warning">Emi Calculator</a>
+                <div class="btn-group">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Admin
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">My Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Settings</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../home.html">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="belowHeader">
+        <div style="background-color: aqua;" class="loan">
+        
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm" >
+                    <h4 style="margin-top: 25%;">Loan Account - 1</h3>
+                      
+                    </div>
+              <div class="col-sm" style="text-align: center; ">
+              <h4>Vehicle Information</h3>
+                <br> 
+                <div class="content" style="margin-top: -20px;">
+                   <b><p>Suzuki Swift</p>
+                    <p>Model 2019</p>
+                    <p>Price : 800000 Rs</p>
+                    <p>Engine DXI</p></b>
+                </div>
+              </div>
+             
+              <div class="col-sm"  style="text-align: center;">
+                <h4>Loan Information</h4>
+                <br> 
+                <div class="content" style="margin-top: -20px; font-size: medium;" >
+                   <b><p>Amount : Rs. 3,50,000</p>
+                    <p>Sanction Date : 08-08-2021 </p>
+                    <p>Tenure & ROI : 5 Years @ 8%</p>
+                    <p>EMI : 7000 PM</p>
+                    <p></p></b>
+                </div>
+              </div>
+              
+              <div class="col-sm" style="text-align: center; ">
+                <h4>Payment Information</h4>
+                    <br> 
+                    <div class="content" style="margin-top: -20px;">
+                       <b><p>Current  Bal : Rs. 150000</p>
+                        <p>This Month Payable : Rs 7000</p>
+                        <p>Due Date : 20-03-2023</p>
+                        <button onclick="window.location.href='Payment.html'">Pay Now</button>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-color: aquamarine;" class="loan">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" >
+                        <h4 style="margin-top: 25%;">Loan Account - 2</h3>
+                          
+                        </div>
+                  <div class="col-sm" style="text-align: center;">
+                  <h4>Vehicle Information</h4>
+                  <br> 
+                <div class="content" style="margin-top: -20px;">
+                   <b><p>Suzuki Swift</p>
+                    <p>Model 2019</p>
+                    <p>Price : 800000 Rs</p>
+                    <p>Engine DXI</p></b>
+                </div>
+                  </div>
+                  <div class="col-sm" style="text-align: center;">
+                    <h4>Loan Information</h4>
+                    <br> 
+                <div class="content" style="margin-top: -20px; font-size: medium;" >
+                   <b><p>Amount : Rs. 3,50,000</p>
+                    <p>Sanction Date : 08-08-2021 </p>
+                    <p>Tenure & ROI : 5 Years @ 8%</p>
+                    <p>EMI : 7000 PM</p>
+                    <p></p></b>
+                </div>
+                  </div>
+                  
+                  <div class="col-sm" style="text-align: center;">
+                    <h4>Payment Information</h4>
+                    <br> 
+                    <div class="content" style="margin-top: -20px;">
+                       <b><p>Current  Bal : Rs. 150000</p>
+                        <p>This Month Payable : Rs 7000</p>
+                        <p>Due Date : 20-03-2023</p>
+                        <button onclick="window.location.href='Payment.html'">Pay Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div style="background-color: bisque;" class="loan">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" style="text-align: center;">
+                        <h4 style="margin-top: 25%;">Loan Account - 3</h3>
+                          
+                        </div>
+                  <div class="col-sm" style="text-align: center;" >
+                  <h4>Vehicle Information</h4>
+                  <br> 
+                <div class="content" style="margin-top: -20px;">
+                   <b><p>Suzuki Swift</p>
+                    <p>Model 2019</p>
+                    <p>Price : 800000 Rs</p>
+                    <p>Engine DXI</p></b>
+                </div>
+                  </div>
+                  <div class="col-sm" style="text-align: center;">
+                    <h4>Loan Information</h4>
+                    <br> 
+                <div class="content" style="margin-top: -20px; font-size: medium;" >
+                   <b><p>Amount : Rs. 3,50,000</p>
+                    <p>Sanction Date : 08-08-2021 </p>
+                    <p>Tenure & ROI : 5 Years @ 8%</p>
+                    <p>EMI : 7000 PM</p>
+                    <p></p></b>
+                </div>
+                  </div>
+                  
+                  <div class="col-sm" style="text-align: center;">
+                    <h4>Payment Information</h4>
+                    <br> 
+                    <div class="content" style="margin-top: -20px;">
+                       <b><p>Current  Bal : Rs. 150000</p>
+                        <p>This Month Payable : Rs 7000</p>
+                        <p>Due Date : 20-03-2023</p>
+                        <button onclick="window.location.href='Payment.html'">Pay Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div></div>
+       
+    </div>
+   
+    <footer class="bg-dark text-center text-white" id="about_us">
+        <div class="container p-4" > 
+           
+    
+    
+        <section class="mb-4">
+            <h4>Contributers Github</h4>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Morgan2526" role="button">Prem Gumathanavar</i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/allauddin111" role="button">Allauddin Jamkhanewale</a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/moonlight-blue" role="button">Param Jangle</i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/yash252525" role="button">Yash Zore</a>
+    
+          </section>
+        </div>
+      
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          Employees @
+          <a class="text-white" href="https://www.3ds.com/">3ds.com</a>
+        </div>
+      </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+</body>
+</html>
