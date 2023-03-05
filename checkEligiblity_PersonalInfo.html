@@ -45,7 +45,7 @@
             <h3 class="card-tittle bg-dark text-center text-white">
               Personal details
             </h3>
-            <div  class="form-control">
+            <form action="LOAN_OFFER.html"  class="form-control">
               <div class="input-group mb-3">
                 <span class="input-group-text">Name</span>
                 <input type="text" id="name"class="form-control" placeholder="Full Name"/>
@@ -56,24 +56,24 @@
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text">Employement Details </span>
-                <input type="text" id="employementStatus" class="form-control"  placeholder="Employee"/>
+                <input type="text" id="employementStatus" class="form-control"  placeholder="Employee / Student / Self-Employed"/>
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text">Yearly Income </span>
-                <input type="number" id="income" class="form-control"  placeholder="Employee"/>
+                <input type="number" id="income" class="form-control"  placeholder="In RS"/>
               </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text">Exisitng Emi </span>
-                <input type="number" id="prevEMI" class="form-control"  placeholder="Employee"/>
+                <input type="text" id="prevEMI" class="form-control"  placeholder="If Any"/>
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text">Phone Number </span>
-                <input type="number" id="phoneNumber" class="form-control"  placeholder="Employee"/>
+                <input type="number" id="phoneNumber" class="form-control"  placeholder="+91----------"/>
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text">Email </span>
-                <input type="number" id="email" class="form-control"  placeholder="Employee"/>
+                <input type="email" id="email" class="form-control"  placeholder="example@email.com"/>
               </div>
               Is Pancard Available:
               <div class="form-check form-check-inline" >
@@ -131,14 +131,14 @@
               
               <button
                 type="submit"
-                onclick="getInfo1();"
+                onclick="return getInfo1();"
                 class="btn btn-warning btn-lg btn-block"
               >
                 Submit
               </button>
   
               <br /><br />
-            </div>
+            </form>
           </div>
         </div>
     </center>

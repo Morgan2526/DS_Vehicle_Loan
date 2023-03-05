@@ -86,6 +86,11 @@ function getInfo1(){
         flag=false;
         console.log("pancard required");
     }
-
-    return flag;
+    if(flag)
+    {
+        return true;
+    }
+    else{
+        return false;
+    }
 }
