@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     
     <title>Applications</title>
-    <link rel='stylesheet' type='text/css' href=''>
+    <link rel='stylesheet' type='text/css' href='StyleSheets/admin.css'>
     <script>
 
 
@@ -57,6 +57,12 @@
             </tbody>
         </table>
    </div>
+<!--______________________ Spinner _____________________-->
+    <div id="overlay" class="d-flex justify-content-center">
+        <div class="spinner-border text-warning" style="width: 3rem; height: 3rem; position: absolute;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
 
 
 
@@ -94,10 +100,14 @@
 
                 str_addition=str_begin+(i+1)+"</th><td>"+table_first_names[i]+"</td><td>"+table_last_names[i]+"</td><td>"+table_applied_on[i]+str_end;
                 document.getElementById(table_id).innerHTML=document.getElementById(table_id).innerHTML+str_addition;
+                for(let j=0;j<1000000000;j++){
+
+                }
             }
         }
+        document.getElementById("overlay").style.visibility="visible";
         fill_clients_table();
-
+        document.getElementById("overlay").style.visibility="hidden";
 
 
     </script>
